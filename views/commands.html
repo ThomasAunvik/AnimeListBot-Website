@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>AnimeList Bot - Contact</title>
+
+    <link rel="canonical" href="https://animelist.thaun.dev/test.html">
+
+    <!-- Bootstrap core CSS -->
+<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<script src="/static/javascripts/frontpage.js"></script>
+
+    <!-- Favicons -->
+<link rel="icon" href="static/favicon.ico">
+<meta name="theme-color" content="#563d7c">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/static/stylesheets/cover.css" rel="stylesheet">
+    <link href="/static/stylesheets/style.css" rel="stylesheet">
+  </head>
+  <body class="text-center mb-auto mx-auto" style="height: auto;">
+    <div class="cover-container d-flex w-100 h-100 p-3 flex-column" style="width: 100%; max-width: none;">
+      
+      <header class="masthead mb-auto mx-auto" style="width: 42em;">
+        <div class="inner">
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" id="username" href="/me"></a>
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link active" href="/commands">Commands</a>
+            <a class="nav-link" href="/contact">Contact</a>
+            <a class="nav-link" href="/login" id="login">Login</a>
+          </nav>
+
+          <nav class="nav nav-masthead-left justify-content-center">
+            <a class="nav-link-left" id="dashboard" href="/dashboard" style="visibility: hidden;">Dashboard</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover mx-auto" id="commands-content">
+      </main>
+
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
+      <script>
+        $.ajax("https://raw.githubusercontent.com/ThomasAunvik/AnimeListBot/master/README.md")
+          .done(res => {
+            $('#commands-content').html(marked(res));
+          })
+      </script> 
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>© 2020 Thomas Aunvik, All rights reserved. <a href="https://github.com/ThomasAunvik/AnimeListBot">GitHub</a></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

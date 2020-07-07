@@ -1,0 +1,6 @@
+Contact: mailto:contact@thaun.dev
+Contact: https://github.com/ThomasAunvik/AnimeListBot
+Encryption: https://animelist.thaun.dev/pgp-key.txt
+Preferred-Languages: en, no
+Canonical: https://animelist.thaun.dev/.well_known/security.txt
+

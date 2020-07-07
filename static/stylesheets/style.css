@@ -1,0 +1,74 @@
+#commands-content {
+    text-align: left;
+    max-width: 80%;
+}
+
+#error-content {
+    text-align: left;
+    max-width: 80%;
+}
+
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#content {
+    min-height: 100%;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    border-spacing: 2px;
+
+    border-color: gray;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    display: block;
+    width: 100%;
+    overflow: auto;
+}
+
+table th, table td {
+    padding: 6px 13px;
+    border: 1px solid gray;
+    font-weight: 600;
+}
+
+table tr {
+    background-color: #333;
+    border-top: 1px solid gray;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}

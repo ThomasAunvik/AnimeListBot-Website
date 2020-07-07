@@ -1,0 +1,20 @@
+{   
+    "client_id": "515269277553655823",
+    "client_secret": "",
+
+    "main": "https://animelist.thaun.dev",
+    "discord_api": "https://discord.com/api",
+    "discord_api_version": "/v6",
+    "oauth": "https://discord.com/api/oauth2/authorize?client_id=515269277553655823&redirect_uri=https%3A%2F%2Fanimelist.thaun.dev%2Fauthorize&response_type=code&scope=identify%20email%20connections%20guilds",
+
+    "database": {
+        "host": "",
+        "database": "animelistbot",
+        "user": "animelistbot",
+        "password": "",
+        "port": 25060,
+	"sslmode": "require"
+    },
+
+    "secret": ""
+}
